@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Tailwind'i</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="min-h-screen bg-gray-950 text-white font-sans p-10 flex flex-col gap-10">
+    <nav class="bg-gray-800 p-4 rounded-xl flex justify-between items-center w-full max-w-6xl mx-auto">
+        <div class="text-xl font-bold text-red-500">Notlarım.App</div>
+
+        <input type="text" placeholder="Notlarda ara..."
+            class="bg-gray-700 text-white px-4 py-2 rounded-lg border border-gray-600 focus:outline-none focus:border-red-500 hidden md:block">
+
+        <div class="space-x-4">
+            <a href="#" class="text-gray-300 hover:text-white">Profil</a>
+            <a href="#" class="text-gray-300 hover:text-white">Çıkış</a>
+        </div>
+    </nav>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl w-full mx-auto">
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6">
+            <h1 class="text-3xl font-bold mb-8">Toplantı Notları</h1>
+            <p class="text-gray-200">Proje detayları konuşulacak.</p>
+            <div class="flex items-center mt-4 mb-4 space-x-3">
+
+                <div
+                    class="h-10 w-10 rounded-full bg-blue-500 flex items-center justify-center text-white font-bold flex-none">
+                    BF
+                </div>
+
+                <div>
+                    <div class="text-sm font-bold text-gray-200">Bora Fırlangeç</div>
+                    <div class="text-xs text-gray-400">2 saat önce</div>
+                </div>
+
+            </div>
+            <button class="w-full mt-6 py-3 px-4 rounded-lg text-white font-bold 
+                           bg-gradient-to-r from-red-500 to-pink-500 
+                           hover:from-red-600 hover:to-pink-600 
+                           transition duration-300 transform hover:scale-105 shadow-lg">
+                Not Ekle
+            </button>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl p-6 relative border-2 border-red-500/50">
+
+            <span
+                class="absolute -top-3 -right-3 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                ACİL
+            </span>
+
+            <h1 class="text-3xl font-bold mb-8">Alışveriş</h1>
+            <p class="text-gray-200">Ofis için kahve alınacak.</p>
+            <button class="bg-red-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-red-600 w-full mt-6">
+                Not Ekle
+            </button>
+        </div>
+
+        <div class="bg-gray-700 shadow-lg rounded-xl overflow-hidden">
+
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                alt="Doğa yürüyüşü yapan birinin bacakları ve manzarası" class="w-full h-48 object-cover">
+
+            <div class="p-6">
+                <h1 class="text-3xl font-bold mb-4">Spor</h1>
+                <p class="text-gray-200 mb-6">Akşam yürüyüşü için sahile inilecek. Kulaklığını unutma!</p>
+
+                <button class="bg-red-500 text-white font-bold py-3 px-4 rounded-lg hover:bg-red-600 w-full">
+                    Not Ekle
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-20 border-t border-gray-800 py-10 text-center">
+        <p class="text-gray-400 text-sm">
+            &copy; 2024 Notlarım.App - Bora Fırlangeç tarafından tasarlandı.
+        </p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="text-gray-500 hover:text-white transition">Twitter</a>
+            <a href="#" class="text-gray-500 hover:text-white transition">GitHub</a>
+            <a href="#" class="text-gray-500 hover:text-white transition">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+
+</html>
