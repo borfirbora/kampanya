@@ -1,38 +1,353 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aktif Kampanya Bulunmuyor</title>
-<link rel="stylesheet" href="output.css">
+    <title>Eğitim Kampanyaları - Dijital Özgürlüğünüzü İnşa Edin</title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body class="bg-slate-900 text-slate-200 font-sans min-h-screen flex items-center justify-center p-4">
 
-    <!-- Ana İçerik Alanı -->
-    <main class="w-full max-w-2xl" role="main">
-        <div class="bg-slate-800 rounded-2xl shadow-2xl p-8 md:p-12 border border-slate-700 text-center">
-            
-            <!-- Dekoratif İkon (Ekran okuyuculardan gizlenmiştir) -->
-            <div class="flex justify-center mb-6" aria-hidden="true">
-                <!-- Hediye kutusu ve iptal işaretini simgeleyen SVG -->
-                <svg class="w-24 h-24 text-slate-500 drop-shadow-[0_0_15px_rgba(148,163,184,0.2)]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7h-3.54a4.001 4.001 0 00-7.92 0H5a2 2 0 00-2 2v2a2 2 0 002 2v6a2 2 0 002 2h10a2 2 0 002-2v-6a2 2 0 002-2V9a2 2 0 00-2-2zM12 7a2 2 0 110-4 2 2 0 010 4zm-7 4h14v2H5v-2zm2 4h10v6H7v-6z"></path>
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 14l6 6m0-6l-6 6"></path>
-                </svg>
+<body class="min-h-screen bg-slate-950 font-sans text-white flex flex-col items-center justify-center p-4 sm:p-8">
+
+    <main class="w-full max-w-7xl mx-auto space-y-12">
+
+        <!-- Başlık Bölümü -->
+        <header class="text-center space-y-4 mt-8 md:mt-0">
+            <span class="bg-blue-900/50 text-blue-200 border border-blue-500/30 text-xs font-bold rounded-full px-4 py-1 inline-block animate-pulse">
+                HAZİRAN 2026 ÖZEL KAMPANYALARI
+            </span>
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight leading-tight">
+                DİJİTAL ÖZGÜRLÜĞÜ <span class="text-blue-500">BİRLİKTE İNŞA EDELİM</span>
+            </h1>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto">
+                Tüketen taraftan, üreten ve sistemlere hükmeden tarafa geçin. Uzmanlık alanlarınızı birleştirin, erişilebilir çözümlerle %50'ye varan avantajları yakalayın.
+            </p>
+        </header>
+
+        <!-- Kampanya Kartları Izgarası -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start">
+
+            <!-- KART 1: Prompt + Markdown (Mavi) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+
+                <span class="bg-blue-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-blue-600/50">
+                    YAPAY ZEKA VE METİN MİMARİSİ
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    Prompt + Markdown
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    P-C-T-C protokolü ile yapay zekanın zihnine hükmedin. Karışık verileri ekran okuyucu dostu, semantik Markdown raporlarına dönüştürün.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-blue-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 1.500₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 3.000₺
+                    </span>
+                    <span class="text-blue-300 text-xs font-bold ml-auto bg-blue-500/20 px-2 py-1 rounded">
+                        %50 İNDİRİM
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-blue-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>%100 Semantik:</strong> Hiyerarşik başlıklar ve temiz Markdown çıktıları.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-blue-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Sistem Güvenliği:</strong> Prompt enjeksiyonlarına karşı Guardrails oluşturma.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-blue-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Tam Otomasyon:</strong> Veriyi alıp n8n ve JSON ile hedefe ulaştırma yeteneği.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-blue-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
             </div>
 
-            <!-- Başlık -->
-            <h1 class="text-2xl md:text-4xl font-bold text-white mb-4 tracking-tight uppercase">
-                Şu An Aktif Kampanyamız Bulunmamaktadır
-            </h1>
+            <!-- KART 2: Python + SQLite (Zümrüt Yeşili) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-emerald-500/20 hover:shadow-emerald-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-emerald-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
 
-            <!-- Açıklama Metni -->
-            <p class="text-slate-400 text-base md:text-lg leading-relaxed">
-                Maalesef, şu anda devam eden herhangi bir indirim, kampanya veya özel teklifimiz bulunmamaktadır. Ancak yeni fırsatlar yolda! Lütfen daha sonra tekrar kontrol edin.
-            </p>
+                <span class="bg-emerald-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-emerald-600/50">
+                    VERİTABANI VE OTOMASYON
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    Python + SQLite
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    Kopyala-yapıştır döngüsünden kurtulun. Python ile ofis otomasyonlarınızı kurun ve NVDA uyumlu SQLite Gezgini ile veritabanınızı yönetin.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-emerald-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 1.000₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 2.000₺
+                    </span>
+                    <span class="text-emerald-300 text-xs font-bold ml-auto bg-emerald-500/20 px-2 py-1 rounded">
+                        %50 İNDİRİM
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-emerald-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Erişilebilir Araç:</strong> Python ile paketlenmiş özel SQLite gezgini hediye.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-emerald-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Pratik Çözüm:</strong> Word, Excel ve PDF verilerini saniyeler içinde işleme.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-emerald-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Zaman Kazanımı:</strong> Hayat kurtaran betikler yazarak robota iş devretme.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-emerald-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- KART 3: Python + HTML + Django (Amber) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-amber-500/20 hover:shadow-amber-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-amber-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+
+                <span class="bg-amber-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-amber-600/50">
+                    FULL-STACK WEB MİMARİSİ
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    Python + HTML + Django
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    Kendi web uygulamalarınızın hem arayüzünü hem de güçlü arka plan mimarisini sıfırdan ve tamamen erişilebilir bir yapıyla inşa edin.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-amber-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 1.300₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 2.600₺
+                    </span>
+                    <span class="text-amber-300 text-xs font-bold ml-auto bg-amber-500/20 px-2 py-1 rounded">
+                        %50 İNDİRİM
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-amber-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>A'dan Z'ye Mimari:</strong> Kodlamaya Python ve HTML ile güçlü başlangıç.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-amber-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Gelişmiş Çerçeve:</strong> Django ile modern ve güvenli uygulamalar geliştirme.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-amber-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Bağımsız Projeler:</strong> Fikrinizi kodlara döküp hayata geçirme becerisi.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-amber-600 hover:bg-amber-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-amber-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- KART 4: Reaper + İçerik Üretimi (Mor) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-purple-500/20 hover:shadow-purple-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-purple-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+
+                <span class="bg-purple-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-purple-600/50">
+                    PROFESYONEL STÜDYO
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    Reaper + Medya Üretimi
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    Sesi OSARA ile cerrahi hassasiyetle kurgulayın. OBS Studio ile ekran ve kameranızı matematiksel değerlerle kimseye sormadan hizalayın.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-purple-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 1.600₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 3.200₺
+                    </span>
+                    <span class="text-purple-300 text-xs font-bold ml-auto bg-purple-500/20 px-2 py-1 rounded">
+                        %50 İNDİRİM
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-purple-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Matematiksel Dizayn:</strong> OBS ekranını X/Y pikselleriyle kusursuz yerleştirme.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-purple-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Cerrahi Montaj:</strong> Reaper ile sesin dalgalarında gezinme, kurgu ve mastering.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-purple-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>AI Metin Yazarlığı:</strong> Yapay zeka ile SEO uyumlu başlık ve senaryo tasarımı.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-purple-600 hover:bg-purple-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-purple-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- KART 5: NVDA + İçerik Üretimi (Kırmızı) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-red-500/20 hover:shadow-red-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-red-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+
+                <span class="bg-red-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-red-600/50">
+                    MUTLAK BAĞIMSIZLIK
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    NVDA + Masterclass
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    Windows'a NVDA ile tamamen hükmedin. Temel yetkinliğinizi sıfırdan kuracağınız profesyonel bir medya imparatorluğuna dönüştürün.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-red-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 2.000₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 4.200₺
+                    </span>
+                    <span class="text-red-300 text-xs font-bold ml-auto bg-red-500/20 px-2 py-1 rounded">
+                        SÜPER AVANTAJ
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-red-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Tam Kontrol:</strong> NVDA konfigürasyonları, profiller ve eklenti yönetimi.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-red-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Sıfırdan Üretim:</strong> Audacity ile net ses kayıtları ve podcast oluşturma.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-red-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Medya Patronu:</strong> Ekranınızı optimize edip YouTube ve Reels standartlarına taşıyın.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-red-600 hover:bg-red-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-red-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
+            </div>
+
+            <!-- KART 6: Python + WSL Linux (Camgöbeği) -->
+            <div class="w-full bg-slate-800 border border-slate-600 rounded-2xl p-8 shadow-2xl shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 relative overflow-hidden group">
+                <div aria-hidden="true" class="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-cyan-600 rounded-full blur-3xl opacity-20 group-hover:opacity-40 transition-opacity"></div>
+
+                <span class="bg-cyan-600 text-white text-xs font-bold rounded-full px-3 py-1 mb-4 inline-block shadow-lg shadow-cyan-600/50">
+                    ÖZGÜR SUNUCU YÖNETİMİ
+                </span>
+
+                <h2 class="text-2xl font-bold text-white mb-2">
+                    Python + WSL Linux
+                </h2>
+                <p class="text-slate-400 mb-6 text-sm">
+                    Arayüzlerin hantallığından kurtulun. Temel Python becerilerinizle kendi otomasyon botlarınızı WSL üzerinden izole ve güvenli şekilde barındırın.
+                </p>
+
+                <div class="flex items-baseline gap-3 mb-6 border-b border-slate-700 pb-6">
+                    <span class="text-cyan-500 text-4xl font-bold">
+                        <span class="sr-only">İndirimli Fiyat: </span> 1.500₺
+                    </span>
+                    <span class="text-slate-500 text-lg line-through">
+                        <span class="sr-only">Eski Fiyat: </span> 3.000₺
+                    </span>
+                    <span class="text-cyan-300 text-xs font-bold ml-auto bg-cyan-500/20 px-2 py-1 rounded">
+                        %50 İNDİRİM
+                    </span>
+                </div>
+
+                <ul class="list-none space-y-3 mb-8">
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-cyan-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Linux Felsefesi:</strong> Debian tabanlı komutlarla uzak ve yerel sunucuları yönetme.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-cyan-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Ekran Okuyucu Dostu:</strong> Grafiksel arayüze ihtiyaç duymadan terminal hakimiyeti.</span>
+                    </li>
+                    <li class="flex items-start gap-3 text-slate-300 text-sm">
+                        <span aria-hidden="true" class="text-cyan-500 text-lg -mt-0.5">&#10003;</span>
+                        <span><strong>Veri Gizliliği:</strong> Kodlarınızı 3. parti bulutlara sızdırmadan kendi evinizde barındırın.</span>
+                    </li>
+                </ul>
+
+                <form action="https://www.shopier.com/s/shipping/borfirbora" method="POST">
+                    <input type="hidden" name="product_id" value="KENDIN_YAZ">
+                    <input type="hidden" name="quantity" value="1">
+                    <button type="submit" class="block w-full text-center bg-cyan-600 hover:bg-cyan-700 text-white font-bold rounded-xl py-4 transition-all shadow-lg hover:shadow-cyan-500/25 transform hover:-translate-y-1">
+                        KAMPANYAYI YAKALA <span class="sr-only">(Güvenli ödeme adımına geçer)</span>
+                    </button>
+                </form>
+            </div>
 
         </div>
+
+        <!-- Footer -->
+        <footer role="contentinfo" class="text-slate-600 text-xs text-center pb-8 pt-12 border-t border-slate-800/50">
+            &copy; 2026 kodyazabil.me. Tüm hakları saklıdır.<br>
+            <div class="mt-2 space-x-2">
+                <a href="https://kodyazabil.me" class="hover:text-blue-500 transition-colors">Platforma Git</a>
+                <span>|</span>
+                <a href="mailto:bilgi@borfirbora.com" class="hover:text-blue-500 transition-colors">İletişim</a>
+            </div>
+        </footer>
+
     </main>
 
 </body>
+
 </html>
